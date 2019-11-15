@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SERVEURPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Modele.Plugin</class>
+    <class>Modele.TimeZoneTransitionType</class>
+    <class>Modele.InnodbTableStats</class>
+    <class>Modele.HelpCategory</class>
+    <class>Modele.TablesPriv</class>
+    <class>Modele.NdbBinlogIndex</class>
+    <class>Modele.ServerCost</class>
+    <class>Modele.SlaveMasterInfo</class>
+    <class>Modele.Func</class>
+    <class>Modele.User</class>
+    <class>Modele.Event</class>
+    <class>Modele.TimeZone</class>
+    <class>Modele.HelpTopic</class>
+    <class>Modele.TimeZoneName</class>
+    <class>Modele.HelpRelation</class>
+    <class>Modele.Servers</class>
+    <class>Modele.EngineCost</class>
+    <class>Modele.ProxiesPriv</class>
+    <class>Modele.TimeZoneLeapSecond</class>
+    <class>Modele.ProcsPriv</class>
+    <class>Modele.SlaveWorkerInfo</class>
+    <class>Modele.Db</class>
+    <class>Modele.InnodbIndexStats</class>
+    <class>Modele.TimeZoneTransition</class>
+    <class>Modele.HelpKeyword</class>
+    <class>Modele.SlaveRelayLogInfo</class>
+    <class>Modele.Proc</class>
+    <class>Modele.GtidExecuted</class>
+    <class>Modele.ColumnsPriv</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
